@@ -3,12 +3,13 @@ import Avengers from './Avengers';
 
 const AvengersList = (props) => {
     return(
-        <div>
+        <div className="list">
             {props.avengersData.map(avenger => {
                 return(
-                    <Avengers Avenger={avenger.name} key={avenger.id}>
+                    <Avengers Avenger={avenger} />
                 );
             })}
         </div>
     );
 }
+export default AvengersList;
